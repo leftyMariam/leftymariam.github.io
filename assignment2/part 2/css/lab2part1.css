@@ -19,6 +19,9 @@ html {
     position: relative;
   }
 
+  iframe{
+    border: 0px;
+  }
   /* Header styling */
 
   header {
