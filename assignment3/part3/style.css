@@ -1,0 +1,154 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+
+/* Import Google Fonts or use @font-face for custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@700&display=swap');
+
+/* Apply site-wide body font and text styling */
+body {
+    font-family: 'Merriweather', serif; /* Body text font */
+    font-size: 10px; /* Global font-size */
+    line-height: 1.6; /* Line height for better readability */
+    letter-spacing: 0.5px; /* Slight letter spacing for body text */
+    word-spacing: 1px; /* Word spacing for readability */
+}
+
+/* Apply font for headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif; /* Sans-serif or slab-serif for headings */
+    letter-spacing: 1.5px; /* Space between letters*/
+    text-align: center; /* Center the top-level heading */
+}
+
+/* Set relative font sizes for headings */
+h1 {
+    font-size: 3rem; /* Approximately 30px */
+}
+
+h2 {
+    font-size: 2.5rem; /* Approximately 25px */
+}
+
+h3 {
+    font-size: 2rem; /* Approximately 20px */
+}
+
+/* Indent the first paragraph after each section heading */
+section h2 + p, section h3 + p {
+    text-indent: 20px;
+}
+
+/* Link styles */
+a {
+    color: #8b0000; /* Color for links matching page bars */
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #660000; /* Darker color for visited links */
+}
+
+a:hover, a:focus {
+    text-decoration: none; /* Remove underline on hover or focus */
+}
+
+a:focus {
+    outline: none; /* Remove default focus outline */
+}
+
+a:active {
+    color: #cc0000; /* Different color for active links */
+}
+
+/* Add external link icon next to external links */
+a[href^="http"]:after {
+    content: url('external-link-icon.png'); /* Path to external link icon */
+    margin-left: 5px;
+}
+
+/* List styling */
+ul, ol {
+    margin: 20px 0; /* Space lists like paragraphs */
+}
+
+li {
+    line-height: 1.6; /* Same line height as paragraphs */
+}
+
+/* Custom bullet for list items (use an image or choose a design-appropriate bullet) */
+ul li {
+    list-style-image: url('custom-bullet.png'); /* Path to custom bullet */
+}
+
+/* Navigation menu styling */
+nav ul {
+    list-style: none; /* Remove default list bullets */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px; /* Space between menu items */
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px;
+    background-color: #ffffff; /* White background for navigation items */
+    border: 1px solid #8b0000; /* Border color matching page theme */
+    color: #8b0000; /* Font color matching theme */
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px; /* Space out letters in the menu */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+nav ul li a:hover {
+    background-color: #8b0000; /* Darker background on hover */
+    color: #ffffff; /* White text color on hover */
+}
